@@ -2,7 +2,7 @@ pipeline {
   agent none
   stages {
     stage('Test') {
-            agent {
+      agent {
         kubernetes {
           yamlFile 'nodejs-pod.yaml'
         }
