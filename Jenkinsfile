@@ -2,8 +2,8 @@ pipeline {
   agent none
   environment {
     FAVORITE_COLOR = 'RED'
-  }
-      triggers {
+  }  
+  triggers {
     eventTrigger simpleMatch('hello-api-deploy-event')
   }
   stages {
